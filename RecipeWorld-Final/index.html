@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<title>Recipe World</title>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<link rel="stylesheet" type="text/css" href="form.css">
+<script src="myscript.js"></script>
+</head>
+<body>
+    <h1>Recipe World</h1>
+    <button type="button" onclick="changeMySize()">Zoom</button>
+<p>Awesome recipes that you want to make cakes</p>
+    <ul>
+    <li><a href="#magic-cake">Magic Cake</a></li>
+    <li><a href="#plum-cake">Plum Cake</a></li>
+    <li><a href="http://www.bbcgoodfood.com/recipes/collection/gordon-ramsay">Check Ramsey's Cakes</a></li>
+    <li><a href="https://www.youtube.com/watch?v=kAbZVT8rDVU">Zebra Cake Video</a></li>
+    <li><a href="#idea">Submit a Recipe idea</a></li>
+    </ul>
+
+<hr/>
+    <h2 id="magic-cake">Magic Cake</h2>
+    <p>Magic Cake is one of the most magical cakes you can make</p>
+
+    <img src="http://www.jocooks.com/wp-content/uploads/2013/03/magic-cake.jpg" alt="magic cake" height="200" width="200">
+
+    <h3>Ingredients</h3>
+    <ul>
+        <li>2 eggs</li>
+        <li>1 pound of sugar</li>
+        <li>1/2 pound of flour</li>
+        <li>3 sticks of butter</li>
+    </ul>
+    <h3>Directions</h3>
+    <ol>
+        <li>Break the eggs</li>
+        <li>Add the sugar</li>
+        <li>Stir in the butter</li>
+        <li>Add some magic potion</li>
+        <li>Bake</li>
+    </ol>
+
+    <hr/>
+
+    <h2 id="plum-cake">Plum Cake</h2>
+    <p>Plum Cake is what you like to eat with some tea</p>
+    <h3>Ingredients</h3>
+    <ul>
+        <li>2 eggs</li>
+        <li>1 pound of sugar</li>
+        <li>1/2 pound of flour</li>
+        <li>3 sticks of butter</li>
+    </ul>
+    <h3>Directions</h3>
+    <ol>
+        <li>Break the eggs</li>
+        <li>Add the sugar</li>
+        <li>Stir in the butter</li>
+        <li>Add some plums</li>
+        <li>Bake</li>
+    </ol>
+<p class="colorful">Hope you loved our recipes...</p>
+<hr/>
+<h2 id="idea">Have a Recipe Idea? Suggest below</h2>
+<form name="myForm" class="white-pink"
+onsubmit="return validateForm()" method="post">
+<label>
+    <span>Name: </span>
+    <input type="text" name="fname"><br/>
+</label>
+<label>
+    <span>Email: </span>
+    <input type="text" name="email"><br/>
+</label>
+<input type="submit" class="button" value="Submit">
+</form>
+<p id="idea-submit"></p>
+
+</body>
+</html>
+
